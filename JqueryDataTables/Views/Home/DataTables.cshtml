@@ -1,0 +1,737 @@
+﻿
+@{
+    ViewBag.Title = "DataTables";
+}
+
+@section css {
+    <link rel="stylesheet"
+          href="//cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+}
+
+@section Scripts {
+    <script type="text/javascript"
+            src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js">
+
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sample-datatables').DataTable();
+        });
+    </script>
+}
+
+<h2>DataTables</h2>
+
+<table id="sample-datatables" class="table table-striped">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Date Created</th>
+            <th>Active</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Kelley</td>
+            <td>Stanton</td>
+            <td>Kelley.Stanton48@gmail.com</td>
+            <td>2019-04-03 4:28:37 PM</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Anne</td>
+            <td>Gerhold</td>
+            <td>Anne98@yahoo.com</td>
+            <td>2019-04-04 4:13:47 AM</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Christine</td>
+            <td>Koepp</td>
+            <td>Christine.Koepp53@yahoo.com</td>
+            <td>2019-04-04 5:48:25 AM</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Tracy</td>
+            <td>Ruecker</td>
+            <td>Tracy55@yahoo.com</td>
+            <td>2019-04-04 12:19:21 AM</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Dora</td>
+            <td>Green</td>
+            <td>Dora.Green@hotmail.com</td>
+            <td>2019-04-03 10:31:48 PM</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>Jeremy</td>
+            <td>Witting</td>
+            <td>Jeremy79@gmail.com</td>
+            <td>2019-04-04 6:59:33 AM</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Earl</td>
+            <td>Kertzmann</td>
+            <td>Earl_Kertzmann39@yahoo.com</td>
+            <td>2019-04-03 4:42:23 PM</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Yvette</td>
+            <td>Green</td>
+            <td>Yvette_Green@yahoo.com</td>
+            <td>2019-04-03 4:49:11 PM</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Benny</td>
+            <td>Boehm</td>
+            <td>Benny_Boehm41@gmail.com</td>
+            <td>2019-04-03 10:50:25 PM</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>Tracy</td>
+            <td>Johnson</td>
+            <td>Tracy73@yahoo.com</td>
+            <td>2019-04-03 7:13:42 PM</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Victor</td>
+            <td>Douglas</td>
+            <td>Victor37@hotmail.com</td>
+            <td>2019-04-04 7:33:00 AM</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>Brendan</td>
+            <td>Stanton</td>
+            <td>Brendan.Stanton15@gmail.com</td>
+            <td>2019-04-03 9:11:30 AM</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Carroll</td>
+            <td>Bernhard</td>
+            <td>Carroll29@hotmail.com</td>
+            <td>2019-04-03 2:15:23 PM</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Jimmie</td>
+            <td>Hodkiewicz</td>
+            <td>Jimmie6@yahoo.com</td>
+            <td>2019-04-04 6:35:08 AM</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>Brad</td>
+            <td>Klein</td>
+            <td>Brad44@yahoo.com</td>
+            <td>2019-04-03 10:07:52 PM</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Tamara</td>
+            <td>McLaughlin</td>
+            <td>Tamara_McLaughlin42@gmail.com</td>
+            <td>2019-04-03 4:28:18 PM</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Gregory</td>
+            <td>McGlynn</td>
+            <td>Gregory_McGlynn8@hotmail.com</td>
+            <td>2019-04-03 3:21:05 PM</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>Sherman</td>
+            <td>Spinka</td>
+            <td>Sherman74@hotmail.com</td>
+            <td>2019-04-03 11:03:29 AM</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>Margie</td>
+            <td>Cremin</td>
+            <td>Margie_Cremin25@yahoo.com</td>
+            <td>2019-04-04 4:50:19 AM</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Leonard</td>
+            <td>Johnston</td>
+            <td>Leonard.Johnston@gmail.com</td>
+            <td>2019-04-04 6:21:33 AM</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Rudolph</td>
+            <td>Wisozk</td>
+            <td>Rudolph_Wisozk31@yahoo.com</td>
+            <td>2019-04-03 11:05:46 PM</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>Edmund</td>
+            <td>Schiller</td>
+            <td>Edmund.Schiller34@gmail.com</td>
+            <td>2019-04-04 1:38:03 AM</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Beatrice</td>
+            <td>Bashirian</td>
+            <td>Beatrice_Bashirian37@hotmail.com</td>
+            <td>2019-04-03 7:47:48 PM</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>Pat</td>
+            <td>Parisian</td>
+            <td>Pat_Parisian28@yahoo.com</td>
+            <td>2019-04-03 2:53:31 PM</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Malcolm</td>
+            <td>Schinner</td>
+            <td>Malcolm39@hotmail.com</td>
+            <td>2019-04-03 6:23:46 PM</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>Sergio</td>
+            <td>Mueller</td>
+            <td>Sergio5@yahoo.com</td>
+            <td>2019-04-03 9:47:57 AM</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Tanya</td>
+            <td>Ledner</td>
+            <td>Tanya47@gmail.com</td>
+            <td>2019-04-03 9:09:16 AM</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Hazel</td>
+            <td>Nader</td>
+            <td>Hazel_Nader68@gmail.com</td>
+            <td>2019-04-04 1:33:32 AM</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>Marc</td>
+            <td>Kuhic</td>
+            <td>Marc_Kuhic74@gmail.com</td>
+            <td>2019-04-04 1:43:30 AM</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Carolyn</td>
+            <td>Welch</td>
+            <td>Carolyn.Welch26@yahoo.com</td>
+            <td>2019-04-03 6:24:24 PM</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>Katie</td>
+            <td>Upton</td>
+            <td>Katie_Upton@hotmail.com</td>
+            <td>2019-04-03 9:46:11 PM</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Tammy</td>
+            <td>Toy</td>
+            <td>Tammy18@yahoo.com</td>
+            <td>2019-04-03 6:06:35 PM</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>Terry</td>
+            <td>Labadie</td>
+            <td>Terry_Labadie@yahoo.com</td>
+            <td>2019-04-03 7:21:45 PM</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Ramona</td>
+            <td>Ryan</td>
+            <td>Ramona.Ryan@gmail.com</td>
+            <td>2019-04-04 7:16:33 AM</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Tina</td>
+            <td>Schimmel</td>
+            <td>Tina.Schimmel75@yahoo.com</td>
+            <td>2019-04-03 5:49:25 PM</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>Fernando</td>
+            <td>Macejkovic</td>
+            <td>Fernando66@hotmail.com</td>
+            <td>2019-04-03 7:29:58 PM</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Philip</td>
+            <td>Roob</td>
+            <td>Philip_Roob99@hotmail.com</td>
+            <td>2019-04-04 4:53:07 AM</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Muriel</td>
+            <td>Gutmann</td>
+            <td>Muriel40@yahoo.com</td>
+            <td>2019-04-04 5:47:06 AM</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Charlene</td>
+            <td>Smitham</td>
+            <td>Charlene.Smitham46@gmail.com</td>
+            <td>2019-04-04 2:29:21 AM</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>Jonathon</td>
+            <td>Wehner</td>
+            <td>Jonathon9@hotmail.com</td>
+            <td>2019-04-04 8:06:45 AM</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>Ed</td>
+            <td>Halvorson</td>
+            <td>Ed.Halvorson@hotmail.com</td>
+            <td>2019-04-03 12:51:26 PM</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>Terrance</td>
+            <td>Gottlieb</td>
+            <td>Terrance_Gottlieb84@yahoo.com</td>
+            <td>2019-04-03 10:34:37 PM</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>Minnie</td>
+            <td>Bruen</td>
+            <td>Minnie84@hotmail.com</td>
+            <td>2019-04-03 5:38:07 PM</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Brian</td>
+            <td>Hessel</td>
+            <td>Brian45@gmail.com</td>
+            <td>2019-04-03 1:20:21 PM</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>Courtney</td>
+            <td>Boyle</td>
+            <td>Courtney_Boyle@hotmail.com</td>
+            <td>2019-04-04 8:21:27 AM</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Ronald</td>
+            <td>Bode</td>
+            <td>Ronald38@yahoo.com</td>
+            <td>2019-04-03 10:15:09 AM</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>Lana</td>
+            <td>O&#39;Connell</td>
+            <td>Lana_OConnell@hotmail.com</td>
+            <td>2019-04-03 5:16:26 PM</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>Jeffery</td>
+            <td>Pollich</td>
+            <td>Jeffery_Pollich@gmail.com</td>
+            <td>2019-04-03 10:16:43 PM</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>Irvin</td>
+            <td>Schowalter</td>
+            <td>Irvin.Schowalter@yahoo.com</td>
+            <td>2019-04-04 3:15:40 AM</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>Wilbert</td>
+            <td>Bruen</td>
+            <td>Wilbert_Bruen98@hotmail.com</td>
+            <td>2019-04-03 7:09:49 PM</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>Chelsea</td>
+            <td>Mante</td>
+            <td>Chelsea.Mante@yahoo.com</td>
+            <td>2019-04-03 10:29:19 PM</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>Jan</td>
+            <td>Casper</td>
+            <td>Jan_Casper@gmail.com</td>
+            <td>2019-04-04 3:43:05 AM</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Joey</td>
+            <td>Green</td>
+            <td>Joey.Green36@hotmail.com</td>
+            <td>2019-04-03 9:00:04 PM</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>Lorraine</td>
+            <td>O&#39;Connell</td>
+            <td>Lorraine.OConnell@gmail.com</td>
+            <td>2019-04-03 11:28:50 AM</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Joshua</td>
+            <td>Jast</td>
+            <td>Joshua_Jast11@gmail.com</td>
+            <td>2019-04-04 5:12:06 AM</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>Bernard</td>
+            <td>Reilly</td>
+            <td>Bernard.Reilly51@yahoo.com</td>
+            <td>2019-04-03 7:09:48 PM</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Rachael</td>
+            <td>Homenick</td>
+            <td>Rachael3@yahoo.com</td>
+            <td>2019-04-03 6:05:46 PM</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>Simon</td>
+            <td>Littel</td>
+            <td>Simon83@hotmail.com</td>
+            <td>2019-04-04 5:20:09 AM</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>Francisco</td>
+            <td>Roberts</td>
+            <td>Francisco_Roberts90@hotmail.com</td>
+            <td>2019-04-03 3:44:14 PM</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Molly</td>
+            <td>Greenfelder</td>
+            <td>Molly26@gmail.com</td>
+            <td>2019-04-04 4:09:43 AM</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>Darrell</td>
+            <td>Prohaska</td>
+            <td>Darrell93@gmail.com</td>
+            <td>2019-04-03 9:55:55 AM</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Damon</td>
+            <td>Jerde</td>
+            <td>Damon_Jerde16@gmail.com</td>
+            <td>2019-04-03 8:40:30 AM</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Jimmy</td>
+            <td>Moore</td>
+            <td>Jimmy_Moore88@yahoo.com</td>
+            <td>2019-04-03 12:03:21 PM</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>Natalie</td>
+            <td>Swaniawski</td>
+            <td>Natalie.Swaniawski@hotmail.com</td>
+            <td>2019-04-03 6:42:53 PM</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Cornelius</td>
+            <td>Ullrich</td>
+            <td>Cornelius72@yahoo.com</td>
+            <td>2019-04-04 12:20:10 AM</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>Gloria</td>
+            <td>Windler</td>
+            <td>Gloria_Windler@hotmail.com</td>
+            <td>2019-04-03 10:55:43 PM</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Lynne</td>
+            <td>Sauer</td>
+            <td>Lynne40@gmail.com</td>
+            <td>2019-04-03 7:40:07 PM</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Mae</td>
+            <td>Wyman</td>
+            <td>Mae.Wyman@hotmail.com</td>
+            <td>2019-04-04 5:07:29 AM</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>Laura</td>
+            <td>Funk</td>
+            <td>Laura.Funk30@gmail.com</td>
+            <td>2019-04-03 8:37:31 PM</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>Patrick</td>
+            <td>Rutherford</td>
+            <td>Patrick78@hotmail.com</td>
+            <td>2019-04-03 3:29:23 PM</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Ann</td>
+            <td>Volkman</td>
+            <td>Ann.Volkman78@gmail.com</td>
+            <td>2019-04-03 11:57:21 AM</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>Roger</td>
+            <td>Schmeler</td>
+            <td>Roger_Schmeler@hotmail.com</td>
+            <td>2019-04-03 6:44:43 PM</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Renee</td>
+            <td>White</td>
+            <td>Renee.White@hotmail.com</td>
+            <td>2019-04-03 9:32:15 PM</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>Raquel</td>
+            <td>Ryan</td>
+            <td>Raquel12@yahoo.com</td>
+            <td>2019-04-03 11:20:22 AM</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Blanche</td>
+            <td>Kris</td>
+            <td>Blanche.Kris@gmail.com</td>
+            <td>2019-04-03 7:40:51 PM</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>Orlando</td>
+            <td>Thiel</td>
+            <td>Orlando55@hotmail.com</td>
+            <td>2019-04-03 12:24:50 PM</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>Mattie</td>
+            <td>Bruen</td>
+            <td>Mattie83@yahoo.com</td>
+            <td>2019-04-03 6:41:20 PM</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>Paul</td>
+            <td>Schulist</td>
+            <td>Paul.Schulist52@hotmail.com</td>
+            <td>2019-04-03 11:02:30 PM</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>Wilfred</td>
+            <td>Waters</td>
+            <td>Wilfred.Waters@hotmail.com</td>
+            <td>2019-04-03 4:54:58 PM</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>Robyn</td>
+            <td>Waters</td>
+            <td>Robyn0@gmail.com</td>
+            <td>2019-04-03 11:48:20 AM</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Leland</td>
+            <td>Dooley</td>
+            <td>Leland_Dooley@yahoo.com</td>
+            <td>2019-04-04 4:35:47 AM</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>Casey</td>
+            <td>Wolff</td>
+            <td>Casey_Wolff@hotmail.com</td>
+            <td>2019-04-03 12:22:57 PM</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>Katherine</td>
+            <td>Satterfield</td>
+            <td>Katherine_Satterfield@yahoo.com</td>
+            <td>2019-04-03 12:41:11 PM</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Jeanne</td>
+            <td>Zemlak</td>
+            <td>Jeanne.Zemlak@yahoo.com</td>
+            <td>2019-04-03 12:55:39 PM</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Caroline</td>
+            <td>Block</td>
+            <td>Caroline.Block12@yahoo.com</td>
+            <td>2019-04-03 1:18:16 PM</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>Alexander</td>
+            <td>West</td>
+            <td>Alexander8@yahoo.com</td>
+            <td>2019-04-04 7:53:14 AM</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Gustavo</td>
+            <td>Moen</td>
+            <td>Gustavo.Moen44@yahoo.com</td>
+            <td>2019-04-04 4:26:26 AM</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Gene</td>
+            <td>Breitenberg</td>
+            <td>Gene_Breitenberg@hotmail.com</td>
+            <td>2019-04-04 7:17:34 AM</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Adrienne</td>
+            <td>Gislason</td>
+            <td>Adrienne71@yahoo.com</td>
+            <td>2019-04-03 9:48:04 AM</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>Michelle</td>
+            <td>Windler</td>
+            <td>Michelle_Windler6@hotmail.com</td>
+            <td>2019-04-04 2:35:41 AM</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>Erica</td>
+            <td>Schoen</td>
+            <td>Erica_Schoen50@yahoo.com</td>
+            <td>2019-04-04 7:05:12 AM</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Diane</td>
+            <td>Homenick</td>
+            <td>Diane49@gmail.com</td>
+            <td>2019-04-04 5:23:47 AM</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Adrienne</td>
+            <td>Auer</td>
+            <td>Adrienne.Auer@yahoo.com</td>
+            <td>2019-04-04 3:04:07 AM</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>Lillie</td>
+            <td>Grady</td>
+            <td>Lillie.Grady84@hotmail.com</td>
+            <td>2019-04-03 11:16:52 PM</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>Ella</td>
+            <td>Thiel</td>
+            <td>Ella_Thiel4@gmail.com</td>
+            <td>2019-04-03 8:26:22 PM</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Kristina</td>
+            <td>Conroy</td>
+            <td>Kristina40@hotmail.com</td>
+            <td>2019-04-04 7:44:46 AM</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>Vanessa</td>
+            <td>Heidenreich</td>
+            <td>Vanessa.Heidenreich@gmail.com</td>
+            <td>2019-04-03 9:22:51 PM</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>Roland</td>
+            <td>Treutel</td>
+            <td>Roland.Treutel@hotmail.com</td>
+            <td>2019-04-04 12:22:55 AM</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Josephine</td>
+            <td>Herzog</td>
+            <td>Josephine.Herzog@gmail.com</td>
+            <td>2019-04-03 10:56:55 AM</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Grant</td>
+            <td>Hirthe</td>
+            <td>Grant_Hirthe@hotmail.com</td>
+            <td>2019-04-03 4:14:04 PM</td>
+            <td>False</td>
+        </tr>
+    </tbody>
+</table>
